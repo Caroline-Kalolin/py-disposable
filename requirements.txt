@@ -12,3 +12,4 @@ boto3~=1.28.62
 jsonschema==4.17.3
 simplejson==3.17.2
 pyrsistent!=0.17.0,!=0.17.1,!=0.17.2,>=0.14.0
+attrs>=17.4.0
