@@ -1,6 +1,9 @@
 # py-disposable
 A disposable Python repository for proof of concept and experiments
 
+❗️ **Works on Windows 64 bit and Python version 3.10.8**
+
+---
 
 ## Download packages offline
 To download the Python offline packages, enter the package name and version in the "requirements.txt" file. 
@@ -30,4 +33,10 @@ git config --global http.sslbackend schannel
 In command prompt, run this command to install the Python packages offline.
 ```
 python -m pip install --no-index -f ".\lib" -r ".\requirements.txt"
+```
+
+## To create Python virtual environment
+Please change folder path before creating own virtual environment
+```
+python -m venv ".\batch_ingestion_poc_v1"
 ```
