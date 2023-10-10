@@ -6,7 +6,7 @@ A disposable Python repository for proof of concept and experiments
 ---
 
 ## Download packages offline
-To download the Python offline packages, enter the package name and version in the "requirements.txt" file. 
+To download the Python offline packages, enter the packages required in the "requirements.txt" file. 
 
 In command prompt, run this command on the machine that can download these packages online.
 
@@ -36,7 +36,19 @@ python -m pip install --no-index -f ".\lib" -r ".\requirements.txt"
 ```
 
 ## To create Python virtual environment
-Please change folder path before creating own virtual environment
+Amend the folder path in the command before running it.
 ```
-python -m venv ".\batch_ingestion_poc_v1"
+python -m venv ".\folder-path"
+```
+
+## Install offline packages on virtual environment
+Python offline packages have to be downloaded into PY-Disposable\lib for pip install to work.
+
+- Change directory to the virtual environment folder path.
+- Create the "requirements.txt" file in the virtual environment folder.
+- Enter the packages required for installation in the "requirements.txt". 
+- In command prompt, run this command to install the Python packages offline.
+
+```
+.\Scripts\Python.exe -m pip install --no-index -f "..\lib" -r "requirements.txt"
 ```

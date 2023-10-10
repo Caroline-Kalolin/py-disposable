@@ -7,10 +7,13 @@ Updated Date: 10 Oct 2023
 
 ---
 
-## Install offline packages
+## Install offline packages on virtual environment
 Python offline packages have to be downloaded into PY-Disposable\lib for pip install to work.
 
-Please enter the package name and version in the "requirements.txt" file. Then in command prompt, run this command to install the Python packages offline.
+- Change directory to the virtual environment folder path.
+- Create the "requirements.txt" file in the virtual environment folder.
+- Enter the packages required for installation in the "requirements.txt". 
+- In command prompt, run this command to install the Python packages offline.
 
 ```
 .\Scripts\Python.exe -m pip install --no-index -f "..\lib" -r "requirements.txt"
