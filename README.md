@@ -8,7 +8,12 @@ To download the Python offline packages, enter the package name and version in t
 In command prompt, run this command on the machine that can download these packages online.
 
 ```
-python -m pip download -r requirements.txt -d ./lib --platform win_amd64 --no-deps
+python -m pip download -r requirements.txt -d ./lib --platform win_amd64 --python-version 310 --no-deps
+```
+
+To run on Unix/Linux, run this command.
+```
+/usr/local/bin/python3 -m pip download -r requirements.txt -d ./lib --platform win_amd64 --python-version 310 --no-deps
 ```
 
 ## Clone repository
